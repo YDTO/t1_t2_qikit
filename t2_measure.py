@@ -28,7 +28,7 @@ for n in range(50, 150, 1):
 counter = 0
 
 provider = IBMQ.get_provider(hub='ibm-q')
-device = provider.get_backend('ibmq_bogota')
+device = provider.get_backend('ibmq_santiago')
 
 circuits = transpile(circuits, backend=device, scheduling_method="alap")
 job = device.run(circuits, shots=shots_num)
