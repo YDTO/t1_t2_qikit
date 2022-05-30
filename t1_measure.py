@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 IBMQ.load_account()
 
 results =[0 for _ in range(41)]
-t = [k for k in range(20,421,10)]
+t = [k for k in range(20, 421, 10)]
 shots_num = 1024
 counter = 0
 circuits = [QuantumCircuit(1, 1) for _ in range(41)]
@@ -33,7 +33,7 @@ counts = device_result.get_counts()
 results = [100*counts[n]['0']/shots_num for n in range(41)]
 
 plt.title('T1')
-plt.xlabel('time [us]')
+plt.xlabel('time between pi pulse and measurement [us]')
 plt.ylabel('probability of 0')
 plt.plot(t, results)
 plt.show()
