@@ -16,15 +16,15 @@ shots_num = 1024
 counter = 0
 circuits = [QuantumCircuit(1, 1) for _ in range(100)]
 for n in range(1, 101, 1):  # try with I/Q
-    circuits[counter].rx(np.pi/2, 0)
+    circuits[counter].rx(np.pi, 0)
     circuits[counter].delay(n, 0, "us")
-    circuits[counter].rx(np.pi/2, 0)
+    circuits[counter].rx(np.pi, 0)
     circuits[counter].measure(0, 0)
     counter = counter + 1
 counter = 0
 
 provider = IBMQ.get_provider(hub='ibm-q')
-device = provider.get_backend('ibmq_santiago')
+device = provider.get_backend('ibmq_belem')
 
 circuits = transpile(circuits, backend=device, scheduling_method="alap")
 job = device.run(circuits, shots=shots_num)

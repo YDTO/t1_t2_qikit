@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4a2601fe-620e-45bb-9913-68cb0e3ad9ff" name="Changes" comment="t2 is also working ith pictures">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/t1_measure.py" beforeDir="false" afterPath="$PROJECT_DIR$/t1_measure.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/t2_measure.py" beforeDir="false" afterPath="$PROJECT_DIR$/t2_measure.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -90,9 +89,6 @@
       <module name="qiskit" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="$USER_HOME$/.conda/envs/qiskit/bin/python" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
@@ -193,7 +189,21 @@
       <option name="project" value="LOCAL" />
       <updated>1653892311405</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="t2 is also working ith pictures">
+      <created>1654492170575</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1654492170575</updated>
+    </task>
+    <task id="LOCAL-00009" summary="t2 is also working ith pictures">
+      <created>1654492293220</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1654492293220</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
