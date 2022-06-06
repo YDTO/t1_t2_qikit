@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 # IBMQ.save_account('15ac85484297874b4d7d0c6ebd87428bde35c5952e2b316f12feb1ec985777452fe9c2b4032f64cc956153f5e1b6dac4fe56a5b0fd49f2d5ef732d68d292f410', overwrite=True)
 IBMQ.load_account()
 
-results =[0 for _ in range(41)]
+results = [0 for _ in range(41)]
 t = [k for k in range(20, 421, 10)]
 shots_num = 1024
 counter = 0

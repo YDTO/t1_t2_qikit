@@ -15,7 +15,7 @@ t = [k for k in range(50, 150, 1)]
 shots_num = 1024
 counter = 0
 circuits = [QuantumCircuit(1, 1) for _ in range(100)]
-for n in range(50, 150, 1):
+for n in range(50, 150, 1): # try with I/Q
     circuits[counter].rx(np.pi/2, 0)
     # for _ in range(n):
     circuits[counter].delay(n, 0, "us")
