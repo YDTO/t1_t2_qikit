@@ -11,17 +11,13 @@ import math
 IBMQ.load_account()
 
 results = [0 for _ in range(100)]
-t = [k for k in range(50, 150, 1)]
+t = [k for k in range(1, 101, 1)]
 shots_num = 1024
 counter = 0
 circuits = [QuantumCircuit(1, 1) for _ in range(100)]
-for n in range(50, 150, 1): # try with I/Q
+for n in range(1, 101, 1):  # try with I/Q
     circuits[counter].rx(np.pi/2, 0)
-    # for _ in range(n):
     circuits[counter].delay(n, 0, "us")
-        # circuits[counter].rx(np.pi, 0)
-        # circuits[counter].delay(n, 0, "us")
-
     circuits[counter].rx(np.pi/2, 0)
     circuits[counter].measure(0, 0)
     counter = counter + 1
